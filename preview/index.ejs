@@ -7,7 +7,7 @@
 </head>
 <body>
   <div id="header" class="header">
-    <div class="header--brand"><a href="https://github.com/leemunroe/grunt-email-workflow" target="_blank">Grunt Email Workflow</a></div>
+    <div class="header--brand">Mail Builder</div>
     <div class="header--select">
       Preview:&nbsp;
       <select id="template-select">
@@ -52,7 +52,7 @@
 
     if (!v)
       return;
-    
+
     $('iframe').attr('src', v + '?t=' + ms);
     document.location.hash = 'template:' + v;
 
