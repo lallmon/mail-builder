@@ -2,69 +2,163 @@
     BUTTONS
 ------------------------------------- */
 
-.btn {
-  -premailer-cellpadding: 0; // This is a specific style for the premailer gem
-  -premailer-cellspacing: 0; // This is a specific style for the premailer gem
-  -premailer-width: 100%; // This is a specific style for the premailer gem
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
   width: 100%;
-
-  > tr > td {
-    padding-bottom: 15px;
-  }
-
-  table {
-    -premailer-cellpadding: 0; // This is a specific style for the premailer gem
-    -premailer-cellspacing: 0; // This is a specific style for the premailer gem
-    -premailer-width: auto; // This is a specific style for the premailer gem
-    width: auto;
-  }
-
-  table td {
-    background-color: #fff;
-    border-radius: $btn-br;
-    text-align: center;
-  }
-
-  a{
-    background-color: #fff;
-    border: solid 1px $primary-color;
-    border-radius: $btn-br;
-    color: $primary-color;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0;
-    padding: 12px 25px;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
+  overflow: hidden;
 }
 
-// Primary call to action button
-.btn-primary {
-
-  table td {
-    background-color: $primary-color;
-  }
-
-  a{
-    background-color: $primary-color;
-    border-color: $primary-color;
-    color: #fff;
-  }
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: $primary;
+  border: 1px solid $white;
+  color: $white;
+  padding: 8px 0;
+  line-height: initial !important;
 }
 
-// Secondary button
-.btn-secondary {
+table.tiny-button td {
+  padding: 5px 0;
+}
 
-  table td {
-    background-color: transparent;
-  }
+table.small-button td {
+  padding: 8px 0;
+}
 
-  a{
-    background-color: transparent;
-    border-color: $primary-color;
-    color: $primary-color;
-  }
+table.medium-button td {
+  padding: 12px 0;
+}
+
+table.large-button td {
+  padding: 21px 0;
+}
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: $white;
+  font-size: 16px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+table.tiny-button td a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 16px;
+}
+
+table.medium-button td a {
+  font-size: 20px;
+}
+
+table.large-button td a {
+  font-size: 24px;
+}
+
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: darken($primary, 10%) !important;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: $white !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: darken($primary, 10%) !important;
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited {
+  color: $white !important;
+}
+
+table.secondary td {
+  background: $secondary;
+  border-color: darken($secondary, 10%);
+  color: $gray;
+}
+
+table.secondary td a {
+  color: $gray;
+}
+
+table.secondary:hover td {
+  background: darken($secondary, 10%) !important;
+  color: $gray;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: $gray !important;
+}
+
+table.success td {
+  background: $success;
+  border-color: darken($success, 10%);
+}
+
+table.success:hover td {
+  background: darken($success, 10%) !important;
+}
+
+table.alert td {
+  background: $yellow;
+  border-color: darken($yellow, 10%);
+}
+
+table.alert:hover td {
+  background: darken($yellow, 10%) !important;
+}
+
+table.radius td {
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+
+table.round td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
 }

@@ -2,50 +2,23 @@
     GLOBAL RESETS
 ------------------------------------- */
 
-table,
-td,
-div,
-a {
-  box-sizing: border-box;
+#outlook a {
+  padding:0;
 }
 
-img {
-  -ms-interpolation-mode: bicubic;
-  max-width: 100%;
+body{
+  width:100% !important;
+  min-width: 100%;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  margin:0;
+  padding:0;
 }
 
-body {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 14px;
-  height: 100% !important;
-  line-height: 1.6em;
-  margin: 0;
-  padding: 0;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  width: 100% !important;
-}
+  /* .ExternalClass applies to Outlook.com (the artist formerly known as Hotmail)  */
 
-// Let's make sure all tables have defaults
-table {
-  border-collapse: separate !important;
-  mso-table-lspace:0pt;
-  mso-table-rspace: 0pt;
-  -premailer-width: 100%; // This is a specific style for the premailer gem
-
-  td {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 14px;
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    vertical-align: top;
-  }
-}
-
-// External class fix for Outlook.com
 .ExternalClass {
-  width: 100%;
+  width:100%;
 }
 
 .ExternalClass,
@@ -55,4 +28,65 @@ table {
 .ExternalClass td,
 .ExternalClass div {
   line-height: 100%;
+}
+
+#backgroundTable {
+  margin:0;
+  padding:0;
+  width:100% !important;
+  line-height: 100% !important;
+}
+
+img {
+  outline:none;
+  text-decoration:none;
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%;
+  float: left;
+  clear: both;
+  display: block;
+}
+
+center {
+  width: 100%;
+  min-width: 580px;
+}
+
+a img {
+  border: none;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  word-break: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+  border-collapse: collapse !important;
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: $gray-light;
+  background-color: $gray-light;
+  height: 1px;
+  border: none;
+}
+
+.header {
+  background-color: $gray;
 }

@@ -1,8 +1,11 @@
 // Main scss styles
-@import 'config';
-@import 'global';
-@import 'layout';
-@import 'type';
-@import 'buttons';
-@import 'other';
-@import 'responsive';
+@import
+'config',
+'global',
+'grid',
+'utility',
+'type',
+'panels',
+'buttons',
+'other',
+'media_queries';

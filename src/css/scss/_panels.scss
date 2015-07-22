@@ -1,0 +1,16 @@
+.panel {
+  background: lighten($gray-light, 10%);
+  border: 1px solid $gray-light;
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
+  padding: 10px !important;
+}
+
+.sub-grid table {
+  width: 100%;
+}
+
+.sub-grid td.sub-columns {
+  padding-bottom: 0;
+}

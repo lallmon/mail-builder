@@ -1,10 +1,22 @@
 /* -------------------------------------
     CONFIGURE YOUR VARIABLES
 ------------------------------------- */
+$white: #ffffff;
+$gray-light: #dcdcdc;
+$gray: #646464;
+$gray-dark: #323232;
+$black: #000000;
 
-$padding: 30px; // For consistent padding
-$grey: #f6f6f6; // Background color
-$width: 580px; // Width of the content area
-$br: 3px; // Border radius
-$btn-br: 5px; // Border radius
-$primary-color: #348eda; // Primary color for buttons and links
+$red: #cc3333;
+$yellow: #e5d959;
+$green: #29a329;
+$blue: #2e438a;
+$violet: #552b8a;
+
+$primary: $red;
+$secondary: $gray-light;
+$success: $green;
+$alert: $yellow;
+$danger: lighten($red, 10%);
+
+$border-radius: 5px;
