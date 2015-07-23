@@ -1,6 +1,8 @@
-# Grunt Email Design Workflow
+# Email Pipeline
 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) 
+This is an amalgamation of Grunt-Email-Workflow combined with the awesome layout additions from Ink
+
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Designing and testing emails is a pain. HTML tables, inline CSS, various devices and clients to test, and varying support for the latest web standards.
 
@@ -28,15 +30,7 @@ This Grunt task helps simplify things.
 
 ## Getting started
 
-If you haven't used [Grunt](http://gruntjs.com/) before check out Chris Coyier's post on [getting started with Grunt](http://24ways.org/2013/grunt-is-not-weird-and-hard/).
-
 Clone this repo, cd to the directory, run `npm install` to install the necessary packages.
-
-```
-git clone https://github.com/leemunroe/grunt-email-workflow.git
-cd grunt-email-workflow
-npm install
-```
 
 Create a `secrets.json` file as outlined below under "Sensitive Information".
 
@@ -102,10 +96,10 @@ Handlebars and Assemble are used for templating.
 
 `/data` contains _optional_ .yml or .json data files that can be used in your templates. It's a good way to store commonly used strings. See `/data/default.yml` and `/partials/follow_lee.hbs` for an example.
 
-`/partials` contains _optional_ .hbs files that can be thought of like includes. To use a partial, for example `/partials/follow_lee.hbs` you would use the following code in your emails template:
+`/partials` contains _optional_ .hbs files that can be thought of like includes. To use a partial, for example `/partials/example_partial.hbs` you would use the following code in your emails template:
 
 ```
-{{> follow_lee }}
+{{> example_partial }}
 ```
 
 `/helpers` contains _optional_ .js files that can help generate your markup. To use a helper, for example `/helpers/helper-button.js` you would use the following code in your emails template:
@@ -131,7 +125,7 @@ Alternatively run `grunt serve`. This will check for any changes you make to you
 
 ### Browser-based previews
 
-In terminal, run `grunt serve`. 
+In terminal, run `grunt serve`.
 
 * This will run the default tasks `grunt` + the `watch` task will be initiated.
 * A preview ui will automagically open on [http://localhost:4000](http://localhost:4000) and you can review your templates.
@@ -213,13 +207,6 @@ Once your AWS account is setup, create a Bucket within S3. You will need to ensu
 
 Run `grunt s3upload` to upload images to your S3 Bucket. This will also run a replace task to change image paths within the destination directory to use the new S3 path.
 
-
-### Sample email templates
-
-I've added two templates here to help you get started.
-
-* [Simple transactional email template](http://leemunroe.github.io/grunt-email-workflow/dist/transaction.html)
-* [Branded email via CDN](http://leemunroe.github.io/grunt-email-workflow/dist/branded.html)
 
 ### More resources
 
