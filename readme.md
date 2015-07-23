@@ -1,6 +1,6 @@
 # Email Pipeline
 
-This is an amalgamation of Grunt-Email-Workflow combined with the awesome layout additions from Ink
+This is an amalgamation of [Grunt-Email-Workflow](https://github.com/leemunroe/grunt-email-workflow) for building emails, combined with the awesome [responsive layout system from Ink](https://github.com/zurb/ink)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
