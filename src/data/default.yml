@@ -1,3 +1,12 @@
-twitter_url: "http://twitter.com/leemunroe"
-twitter_handle: "@leemunroe"
-unsubscribe_url: "http://giphy.com/gifs/stop-christina-aguilera-ncuegg83kFeBW"
+header:
+  image_url: http://placehold.it/200x50
+  message: Small Blurb!
+
+footer:
+  company_name: ExampleCo
+  company_location: "Los Angeles, CA"
+  terms_url: http://www.example-co.com/pages/terms_of_service
+  privacy_url: http://www.example-co.com/pages/privacy
+  unsubscribe_url: http://www.example-co.com/pages/privacy
+
+call-to-action: Call to Action
