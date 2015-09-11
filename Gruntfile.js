@@ -14,7 +14,8 @@ module.exports = function(grunt) {
       src_img:    'src/img',
       dist:       'dist',
       dist_img:   'dist/img',
-      preview:    'preview'
+      preview:    'preview',
+      sassy_ink:  'sassy-ink'
     },
 
 
@@ -28,7 +29,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          '<%= paths.src %>/css/main.css': '<%= paths.src %>/css/scss/main.scss'
+          '<%= paths.src %>/css/main.css': '<%= paths.sassy_ink %>/scss/ink.scss'
         }
       },
 
