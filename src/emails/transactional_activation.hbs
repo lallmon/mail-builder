@@ -1,0 +1,68 @@
+---
+  layout: default.hbs
+---
+
+{{> header}}
+
+<table class="container">
+  <tr>
+    <td>
+
+      <!-- CONTENT STARTS HERE -->
+      <table class="row">
+        <tr>
+          <td class="wrapper last">
+
+            <table class="twelve columns" align="center">
+              <tr>
+                <td>
+                  <h3 class="align-center">{{ transactional.activation.header }}</h3>
+                  <br>
+                  <p class="align-center">{{ transactional.activation.message }}</p>
+                  <hr>
+                  <br>
+                  <img class="align-center" width="580" src="{{ transactional.activation.image_url }}">
+                  <br>
+                  <hr>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+
+      <br>
+      <!-- Break Tag for row -->
+
+      <table class="row">
+        <tr>
+          <td class="wrapper">
+
+            <center>
+              <table class="six columns center">
+                <tr>
+                  <td>
+                    <table class="button medium-button primary radius">
+                      <tr>
+                        <td>
+                          <a href="{{ transactional.activation.call_to_action_url }}">{{ transactional.activation.call_to_action_text }}</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="expander"></td>
+                </tr>
+              </table>
+            </center>
+
+          </td>
+        </tr>
+      </table>
+      <br>
+      <!-- container end below -->
+    </td>
+  </tr>
+</table>
+{{> footer }}

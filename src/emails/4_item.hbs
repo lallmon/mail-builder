@@ -1,0 +1,184 @@
+---
+layout: default.hbs
+---
+{{> header}}
+
+<table class="container">
+  <tr>
+    <td>
+
+    <!-- CONTENT STARTS HERE -->
+    <table class="row">
+       <tr>
+         <td class="wrapper last">
+
+           <table class="twelve columns">
+             <tr>
+               <td>
+                  <h4>{{ 4_item.header }}</h4>
+                  <br>
+                  <p>{{ 4_item.message }}</p>
+               </td>
+               <td class="expander"></td>
+             </tr>
+           </table>
+          <hr>
+         </td>
+       </tr>
+     </table>
+
+     <table class="row">
+       <tr>
+         <td class="wrapper">
+
+           <table class="six columns">
+             <tr>
+               <td>
+                  <a href="{{ 4_item.item_1_url }}">
+                    <img src="{{ 4_item.item_1_image_url }}">
+                  </a>
+               </td>
+               <td class="expander"></td>
+             </tr>
+             <tr>
+               <td>
+                  <p>{{ 4_item.item_1_description }}</p>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <table class="button medium-button primary radius">
+                   <tr>
+                     <td>
+                       <a href="{{ 4_item.item_1_url }}">{{ 4_item.button_text }}</a>
+                     </td>
+                   </tr>
+                 </table>
+               </td>
+             </tr>
+           </table>
+
+         </td>
+         <td class="wrapper last">
+
+           <table class="six columns">
+             <tr>
+               <td>
+                 <a href="{{ 4_item.item_2_url }}">
+                   <img src="{{ 4_item.item_2_image_url }}">
+                 </a>
+               </td>
+               <td class="expander"></td>
+             </tr>
+             <tr>
+               <td>
+                  <p>{{ 4_item.item_2_description }}</p>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <table class="button medium-button primary radius">
+                   <tr>
+                     <td>
+                       <a href="{{ 4_item.item_2_url }}">{{ 4_item.button_text }}</a>
+                     </td>
+                   </tr>
+                 </table>
+               </td>
+             </tr>
+           </table>
+
+         </td>
+       </tr>
+     </table>
+
+     <hr>
+
+     <table class="row">
+       <tr>
+         <td class="wrapper">
+
+           <table class="six columns">
+             <tr>
+               <td>
+                 <a href="{{ 4_item.item_3_url }}">
+                   <img src="{{ 4_item.item_3_image_url }}">
+                 </a>
+               </td>
+               <td class="expander"></td>
+             </tr>
+             <tr>
+               <td>
+                  <p>{{ 4_item.item_3_description }}</p>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <table class="button medium-button primary radius">
+                   <tr>
+                     <td>
+                       <a href="{{ 4_item.item_3_url }}">{{ 4_item.button_text }}</a>
+                     </td>
+                   </tr>
+                 </table>
+               </td>
+             </tr>
+           </table>
+
+         </td>
+         <td class="wrapper last">
+
+           <table class="six columns">
+             <tr>
+               <td>
+                 <a href="{{ 4_item.item_4_url }}">
+                   <img src="{{ 4_item.item_4_image_url }}">
+                 </a>
+               </td>
+               <td class="expander"></td>
+             </tr>
+             <tr>
+               <td>
+                  <p>{{ 4_item.item_4_description }}</p>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <table class="button medium-button primary radius">
+                   <tr>
+                     <td>
+                       <a href="{{ 4_item.item_4_url }}">{{ 4_item.button_text }}</a>
+                     </td>
+                   </tr>
+                 </table>
+               </td>
+             </tr>
+           </table>
+
+         </td>
+       </tr>
+     </table>
+
+     <table class="row">
+        <tr>
+          <td class="wrapper last">
+
+            <table class="twelve columns">
+              <tr>
+                <td>
+                   <p>{{ 4_item.sign_off }}</p>
+                   <br>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+
+    <!-- container end below -->
+    </td>
+  </tr>
+</table>
+{{> footer }}

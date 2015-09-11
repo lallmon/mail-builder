@@ -1,3 +1,10 @@
-twitter_url: "http://twitter.com/leemunroe"
-twitter_handle: "@leemunroe"
-unsubscribe_url: "http://giphy.com/gifs/stop-christina-aguilera-ncuegg83kFeBW"
+header:
+  image_url: http://placehold.it/120x40
+  message: Quick Callout
+
+footer:
+  company_name: This Company
+  company_location:
+  terms_url: http://www.thiscompany.com/pages/terms_of_service
+  privacy_url: http://www.thiscompany.com/pages/privacy
+  unsubscribe_url:
