@@ -1,0 +1,18 @@
+header: Inspiring photos for your weekend!
+sub_header: This collection of cool places that users like you have been to!
+item_1_url: http://www.google.com
+item_1_image_url: http://res.cloudinary.com/wildworld/image/upload/c_limit,h_600/v1442000092/ls4tdcd7pqvyl8unmdls.png
+item_1_description: Who doesn't like waterfalls?
+item_1_button_text: Like It!
+
+item_2_url: http://www.google.com
+item_2_image_url: http://res.cloudinary.com/wildworld/image/upload/c_crop,g_custom/c_scale,h_600,w_600/v1441994846/dlj5xo38jmfdysptp1pa.jpg
+item_2_description: The amazing horshoe lake!
+item_2_button_text: Love It!
+
+item_3_url: http://www.google.com
+item_3_image_url: http://res.cloudinary.com/wildworld/image/upload/c_crop,g_custom/c_scale,h_600,w_600/v1442001379/zegl668j1rypzoagnwcu.jpg
+item_3_description: It's like something from Middle Earth.
+item_3_button_text: Live It!
+
+sign_off: See you later alligator!

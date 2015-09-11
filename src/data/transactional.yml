@@ -1,0 +1,25 @@
+general:
+  header: This is a transactional email header
+  message: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+  item_url: http://www.google.com
+  image_url: http://placehold.it/600x300
+
+  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+  call_to_action_text: Go do the thing!
+  call_to_action_url: http://google.com
+
+  sign_off: Thanks for your support
+
+activation:
+  header: "Activate Account"
+  message: "Click the button below to finish your account and start your journey."
+
+  item_url: http://google.com
+  image_url: http://placehold.it/600x300
+
+  call_to_action_text: "Activate!"
+  call_to_action_url: http://google.com
+
+  sign_off: "-- See you soon"

@@ -1,0 +1,71 @@
+---
+layout: default.hbs
+---
+{{> header}}
+
+<table class="container">
+  <tr>
+    <td>
+      <!-- CONTENT STARTS HERE -->
+      <table class="row">
+        <tr>
+          <td class="wrapper last">
+
+            <table class="twelve columns" align="center">
+              <tr>
+                <td>
+                  <h3 class="center">{{ transactional.general.header }}</h3>
+                  <br>
+                  <p>{{ transactional.general.message }}</p>
+                  <hr>
+                  <br>
+                  <img class="align-center" width="580" src="{{ transactional.general.image_url }}">
+                  <br>
+                  <hr>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+      <br>
+      <!-- Break Tag for row -->
+
+      <table class="row">
+        <tr>
+          <td class="wrapper">
+
+            <center>
+              <table class="six columns">
+                <tr>
+                  <td class="center">
+                    <table class="button medium-button primary radius">
+                      <tr>
+                        <td>
+                          <a href="{{ transactional.general.call_to_action_url }}">{{ transactional.general.call_to_action_text }}</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="expander"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>{{ transactional.general.sign_off }}</p>
+                  </td>
+                  <td class="expander"></td>
+                </tr>
+              </table>
+            </center>
+
+          </td>
+        </tr>
+      </table>
+      <!-- container end below -->
+    </td>
+  </tr>
+</table>
+
+{{> footer }}
