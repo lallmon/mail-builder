@@ -1,20 +1,24 @@
-# Grunt Email Design Workflow
-
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) 
+# Mail Builder
 
 Designing and testing emails is a pain. HTML tables, inline CSS, various devices and clients to test, and varying support for the latest web standards.
 
-This Grunt task helps simplify things.
+This project is combination of two amazing developments, [Grunt Email Workflow](https://github.com/leemunroe/grunt-email-workflow) by @leemunroe and [Sassy-Ink](https://github.com/faustgertz/sassy-ink) by @faustgertz which is a Scss port of the [Ink](https://github.com/zurb/ink) Responsive Email Framework by Zurb Foundation.
 
-1. Compiles your SCSS to CSS
+These two compliment each other like Chocolate/PeanutButter or PeanutButter/Chocolate
 
-2. Builds your HTML email templates
+These are:
 
-3. Inlines your CSS
+- A responsive email layout framework
 
-4. Compresses and uploads images to a CDN (optional)
+- Compiles your SCSS to CSS
 
-5. Sends a test email to your inbox or Litmus (optional)
+- Builds your HTML email templates
+
+- Inlines your CSS
+
+- Compresses and uploads images to a CDN (optional)
+
+- Sends a test email to your inbox or Litmus (optional)
 
 ## Requirements
 
@@ -35,9 +39,11 @@ If you haven't used [Grunt](http://gruntjs.com/) before check out Chris Coyier's
 Clone this repo, cd to the directory, run `npm install` to install the necessary packages.
 
 ```
-git clone https://github.com/leemunroe/grunt-email-workflow.git
-cd grunt-email-workflow
+git clone git@github.com:LucasKA/mail-builder.git
+cd mail-builder
 npm install
+git submodule init
+git submodule update
 ```
 
 #### 2. Create secrets.json
@@ -52,7 +58,7 @@ Run `grunt` in command line and check out your `/dist` folder to see your compil
 We encourage you __not__ to store sensitive data in your git repository. If you must, please look into [git-encrypt](https://github.com/shadowhand/git-encrypt) or some other method of encrypting your configuration secrets.
 
 1. Create a file `secrets.json` in your project root.
-2. Paste the following sample code in `secrets.json` and enter the appropriate credentials for the services you want to connect with. 
+2. Paste the following sample code in `secrets.json` and enter the appropriate credentials for the services you want to connect with.
 
 If you don't use or need these services **it's ok to leave these defaults**, but they should exist for this to work.
 
@@ -139,7 +145,7 @@ Alternatively run `grunt serve`. This will check for any changes you make to you
 
 ### Browser-based previews
 
-In terminal, run `grunt serve`. 
+In terminal, run `grunt serve`.
 
 * This will run the default tasks `grunt` + the `watch` task will be initiated.
 * A preview ui will automagically open on [http://localhost:4000](http://localhost:4000) and you can review your templates.
