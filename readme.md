@@ -2,7 +2,7 @@
 
 Designing and testing emails is a pain. HTML tables, inline CSS, various devices and clients to test, and varying support for the latest web standards.
 
-This project is combination of two amazing developments, [Grunt Email Workflow](https://github.com/leemunroe/grunt-email-workflow) by @leemunroe and [Sassy-Ink](https://github.com/faustgertz/sassy-ink) by @faustgertz which is a Scss port of the [Ink](https://github.com/zurb/ink) Responsive Email Framework by Zurb Foundation.
+This project is combination of two amazing developments, [Grunt Email Workflow](https://github.com/leemunroe/grunt-email-workflow) by @leemunroe and [Foundation for Ink](https://github.com/zurb/ink) Responsive Email Framework by Zurb Foundation.
 
 These two compliment each other like Chocolate/PeanutButter or PeanutButter/Chocolate
 
