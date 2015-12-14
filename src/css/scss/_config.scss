@@ -1,0 +1,21 @@
+/* Config Variables */
+
+$white: #ffffff;
+$gray-light: #dcdcdc;
+$gray: #646464;
+$gray-dark: #323232;
+$black: #000000;
+
+$red: #cc3333;
+$yellow: #e5d959;
+$green: #29a329;
+$blue: #2e438a;
+$violet: #552b8a;
+
+$primary: $red;
+$secondary: $gray-light;
+$success: $green;
+$alert: $yellow;
+$danger: darken($red, 20%);
+
+$border-radius: 5px;
