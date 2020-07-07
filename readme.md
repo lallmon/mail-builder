@@ -1,3 +1,7 @@
+#DEPRECATED
+
+This isn't being supported or actively developed.
+
 # Mail Builder
 
 Designing and testing emails is a pain. HTML tables, inline CSS, various devices and clients to test, and varying support for the latest web standards.
